@@ -1,4 +1,11 @@
 :root {
+  --primary-cyan: hsl(185, 75%, 39%);
+  --dark-blue: hsl(229, 23%, 23%);
+  --gray-blue: hsl(227, 10%, 46%);
+  --gray: hsl(0, 0%, 59%);
+  --black: hsl(0, 0%, 10%);
+  --white: hsl(0, 0%, 100%);
+  --primary-font: 'Kumbh Sans', sans-serif;
 }
 
 /* Hidden class for accessibility */
@@ -15,6 +22,43 @@
 }
 
 body {
+  font-family: var(--primary-font);
+  font-size: 1.125rem;
+  background-color: var(--primary-cyan);
+  position: relative;
+}
+
+.container {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: 1fr auto;
+  justify-items: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.container::before,
+.container::after {
+  content: '';
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  opacity: 0.75;
+}
+
+.container::before {
+  background: url('../assets/images/bg-pattern-top.svg');
+  transform: translate(-50%, -50%);
+  background-position: bottom right;
+}
+
+.container::after {
+  background: url('../assets/images/bg-pattern-bottom.svg');
+  background-position: top left;
+  transform: translate(50%, 50%);
 }
 
 .fm-byline {
@@ -26,5 +70,5 @@ body {
 
 .fm-byline,
 .fm-byline a {
-  color: hsl(228, 45%, 44%);
+  color: var(--black);
 }
