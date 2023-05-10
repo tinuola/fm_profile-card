@@ -38,7 +38,7 @@ body {
   position: relative;
   overflow: hidden;
 
-  /* Approach #1 */
+  /* Background approach #1 */
   /* https://github.com/0xabdulkhalid/profile-card-component/ */
   /* background-image: url(../assets/images/bg-pattern-top.svg),
     url(../assets/images/bg-pattern-bottom.svg);
@@ -46,7 +46,7 @@ body {
   background-repeat: no-repeat, no-repeat; */
 }
 
-/* Approach #2 */
+/* Background Approach #2 */
 /* https://github.com/grace-snow/fmentor_profile-card-component/  */
 .container::before,
 .container::after {

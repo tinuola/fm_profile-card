@@ -16,7 +16,9 @@ Live Site: [https://tinuola.github.io/fm_profile-card/](https://tinuola.github.i
 
 ### Enhancement(s)
 
--
+- Create animated effect similar to:
+  - https://applepiegiraffe.github.io/profile-card-component/
+  - [Github Repo](https://github.com/ApplePieGiraffe/profile-card-component)
 
 ### Tools & Resources
 
