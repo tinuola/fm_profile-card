@@ -24,6 +24,7 @@
 body {
   font-family: var(--primary-font);
   font-size: 1.125rem;
+  font-weight: 400;
   background-color: var(--primary-cyan);
   position: relative;
 }
@@ -36,17 +37,25 @@ body {
   align-items: center;
   position: relative;
   overflow: hidden;
+
+  /* Approach #1 */
+  /* https://github.com/0xabdulkhalid/profile-card-component/ */
+  /* background-image: url(../assets/images/bg-pattern-top.svg),
+    url(../assets/images/bg-pattern-bottom.svg);
+  background-position: right 60vw bottom 40vh, left 60vw top 50vh;
+  background-repeat: no-repeat, no-repeat; */
 }
 
+/* Approach #2 */
+/* https://github.com/grace-snow/fmentor_profile-card-component/  */
 .container::before,
 .container::after {
   content: '';
   position: absolute;
-  background-repeat: no-repeat;
-  background-size: contain;
   width: 100%;
   height: 100%;
   opacity: 0.75;
+  z-index: -1;
 }
 
 .container::before {
@@ -59,6 +68,88 @@ body {
   background: url('../assets/images/bg-pattern-bottom.svg');
   background-position: top left;
   transform: translate(50%, 50%);
+}
+
+main {
+  width: 326px;
+  background-color: var(--white);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  main {
+    width: 350px;
+  }
+}
+
+.card__header {
+  background-image: url('../assets/images/bg-pattern-card.svg');
+  height: 140px;
+}
+
+.card__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4.5rem;
+  padding-bottom: 1.5rem;
+  position: relative;
+}
+
+.card__body::before {
+  content: '';
+  position: absolute;
+  background: url('../assets/images/image-victor.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 0.25rem;
+  border-color: var(--white);
+  transform: translate(0%, -100%);
+}
+
+.user__name {
+  font-weight: 700;
+  color: var(--dark-blue);
+  margin-bottom: 0.875rem;
+}
+
+.user__age {
+  font-weight: initial;
+  color: var(--gray-blue);
+}
+
+.user__geo {
+  font-size: 0.875rem;
+  color: var(--gray-blue);
+}
+
+.card__footer {
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: hsla(228, 9%, 92%, 1);
+}
+
+.social-stats p:nth-of-type(1) {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.5625rem;
+}
+
+.social-stats p:nth-of-type(2) {
+  font-size: 0.625rem;
+  letter-spacing: 1.5px;
+  color: var(--gray-blue);
 }
 
 .fm-byline {
