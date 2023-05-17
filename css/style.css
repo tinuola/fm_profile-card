@@ -154,6 +154,10 @@ main {
   color: var(--gray-blue);
 }
 
+.fm-byline-row {
+  margin-bottom: 1rem;
+}
+
 .fm-byline {
   font-size: 0.75rem;
   letter-spacing: 1px;
@@ -163,5 +167,6 @@ main {
 
 .fm-byline,
 .fm-byline a {
-  color: var(--black);
+  color: var(--white);
+  font-weight: 500;
 }
