@@ -118,7 +118,7 @@ main {
   font-weight: 700;
   font-size: inherit;
   color: var(--dark-blue);
-  margin-bottom: 0.875rem;
+  margin-bottom: 0.5rem;
 }
 
 .user__age {
@@ -142,9 +142,10 @@ main {
 }
 
 .social-stats h3 {
+  font-size: inherit;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 0.5625rem;
+  margin-bottom: 0.5rem;
 }
 
 .social-stats p {
