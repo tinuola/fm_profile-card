@@ -26,5 +26,8 @@ Live Site: [https://tinuola.github.io/fm_profile-card/](https://tinuola.github.i
 
 - HTML, CSS, JavaScript
 - CSS Resets
+- Background image:
+  - [Grace Snow solution](https://github.com/grace-snow/fmentor_profile-card-component/)
+  - [How to place background image using ::before pseudo selectors in CSS](https://www.geeksforgeeks.org/how-to-place-background-image-using-before-pseudo-selectors-in-css/#) _(Geeks for Geeks)_
 
 _Visit my [Frontend Mentor profile](https://www.frontendmentor.io/profile/tinuola) to view other challenges I've completed!_
