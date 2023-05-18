@@ -12,11 +12,15 @@ Live Site: [https://tinuola.github.io/fm_profile-card/](https://tinuola.github.i
 
 ### Retrospective
 
--
+- Seemingly simple project with slightly unusual layout elements to resolve:
+  - The "orbs" or semi-circular graphics in the background
+  - The user image in the center of the card component
+- Using pseudo-elements turned out to be the key, though with the orbs there was an [approach](https://github.com/0xabdulkhalid/profile-card-component/) that did not involve using these keywords
+  - Yet another reminder of how often these keywords come into play to solve tricky or unusual styling issues
 
 ### Enhancement(s)
 
--
+- Possible animation effect for practice
 
 ### Tools & Resources
 
